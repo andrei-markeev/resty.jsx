@@ -1,0 +1,21 @@
+{
+    "name": "resty.jsx",
+    "version": "1.0.0",
+    "description": "Use JSX to generate HTML in Openresty with TypescriptToLua",
+    "types": "./jsx",
+    "main": "./lib/resty/jsx",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "jsx",
+        "typescript",
+        "openresty",
+        "nginx"
+    ],
+    "author": "Andrei Markeev",
+    "license": "MIT",
+    "dependencies": {
+        "lua-types": "^2.11.0"
+    }
+}
