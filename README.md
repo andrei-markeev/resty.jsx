@@ -17,15 +17,13 @@ Install from NPM:
 npm i resty.jsx
 ```
 
-Add the following code to **tsconfig.json**:
+Add `jsx` and `jsxFactory` parameters to **tsconfig.json**:
 
 ```json
 {
     "compilerOptions": {
-        ...
         "jsx": "react",
         "jsxFactory": "createElement",
-        ...
     }
 }
 ```
@@ -49,10 +47,10 @@ return <div>Hello world!</div>
 By default, **TypescriptToLua** will put this library to `lua-modules/resty.jsx` under the output directory and change the
 Lua `require` correspondingly.
 
-Alternatively, you may want to install it same way as other other libraries that are installed via LuaRocks or OPM.
+Alternatively, you may want to install it in a more traditional way, same as LuaRocks or OPM do.
 
 In this case, you can simply copy [jsx.lua](/lib/resty/jsx.lua) to `/usr/local/openresty/site/lualib/resty/` folder, and
-then you need to disable **TypescriptToLua**'s resolution by adding the following line to the **tsconfig.json**:
+then you need to disable **TypescriptToLua**'s module resolution by adding the following line to the **tsconfig.json**:
 
 ```json
 {
