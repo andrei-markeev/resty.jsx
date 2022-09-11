@@ -83,7 +83,7 @@ local function processChild(child)
         return html
     end
 end
-local function createElement(self, tag, props, ...)
+local function createElement(tag, props, ...)
     if type(tag) == "string" then
         local innerHTML = ""
         for i,v in ipairs({...}) do
