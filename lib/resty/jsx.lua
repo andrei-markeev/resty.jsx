@@ -91,7 +91,7 @@ local function createElement(tag, props, ...)
         end
         return { html = "<" .. tag .. mapPropsToAttributes(props) .. ">" .. innerHTML .. "</" .. tag .. ">" }
     else
-        return tag(nil, props, ...)
+        return tag(props, ...)
     end
 end
 
