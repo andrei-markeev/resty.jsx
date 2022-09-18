@@ -124,6 +124,7 @@ interface FormHTMLAttributes extends HTMLAttributes {
     name?: string;
     novalidate?: boolean;
     target?: string;
+    onsubmit?: string;
 }
 
 interface HtmlHTMLAttributes extends HTMLAttributes {
