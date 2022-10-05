@@ -199,6 +199,8 @@ interface InputHTMLAttributes extends HTMLAttributes {
     oninput?: string;
     onchange?: string;
     onclick?: string;
+    onfocus?: string;
+    onblur?: string;
 }
 
 interface KeygenHTMLAttributes extends HTMLAttributes {
