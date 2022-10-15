@@ -69,7 +69,9 @@ local function mapPropsToAttributes(props)
     return html
 end
 local function processChild(child)
-    if type(child) == "number" then
+    if not child then
+        return ""
+    elseif type(child) == "number" then
         return tostring(child)
     elseif type(child) == "string" then
         return escapeHtml(child)
